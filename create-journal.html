@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Journal</title>
+  </head>
+  <body>
+    <h1>Create Journal</h1>
+    <form action="/api/v1/journals" method="post">
+      <label for="main-title">Journal-Title</label>
+      <input
+        id="main-title"
+        type="text"
+        name="title"
+        placeholder="enter title"
+        minlength="3"
+        required
+      />
+
+      <br />
+
+      <label for="journal-category">Journal Category</label>
+      <select id="journal-category" name="category" required>
+        <option value="over-trading">Over Trading</option>
+        <option value="revenge-trading">Revenge Trading</option>
+        <option value="psychology">Psychology</option>
+        <option value="poor-entry">Poor Entry</option>
+        <option value="trading-plan">Tradin Plan</option>
+        <option value="loss">Loss</option>
+        <option value="win">Win</option>
+        <option value="breakeven">Breakeven</option>
+      </select>
+
+      <br />
+
+      <label for="journal-entry">Journal Entry</label>
+      <textarea
+        name="entry"
+        id="journal-entry"
+        cols="30"
+        rows="5"
+        minlength="10"
+        required
+      ></textarea>
+
+      <br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
