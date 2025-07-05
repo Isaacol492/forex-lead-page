@@ -1,1 +1,12 @@
+![WhatsApp Image 2025-06-20 at 14 36 03_9814ac8b](https://github.com/user-attachments/assets/edcf1f51-9890-4f01-abf5-45747582db16)
+![undraw_savings_uwjn](https://github.com/user-attachments/assets/343e2835-2d87-41ba-b274-0fc2a47c99eb)
+![undraw_remote-meeting_l9wx](https://github.com/user-attachments/assets/677b1067-eb01-466e-85fa-72aea55241d4)
+![undraw_projections_fhch](https://github.com/user-attachments/assets/e043ada9-5f1e-4d9b-938c-84b18433f37d)
+![undraw_predictive-analytics_6vi1](https://github.com/user-attachments/assets/d416b1e2-d66e-453a-8c4e-2655b3c17340)
+![undraw_bull-market_4a8e](https://github.com/user-attachments/assets/307fb5af-2845-4661-a5d6-c29a95fc4e29)
+![trading-candlestick-chart-line-KazxVJ8-600](https://github.com/user-attachments/assets/e73391dd-3a64-4f7b-a18a-0ad3cc59a1bb)
+![icons8-youtube-94](https://github.com/user-attachments/assets/8ad6867e-fcc2-4d00-9bf3-3bcc1ae1b53b)
+![icons8-linkedin-94](https://github.com/user-attachments/assets/d559e8d8-6f53-4072-895e-1b77cba5631d)
+![icons8-instagram-logo-94](https://github.com/user-attachments/assets/c7be7c39-4e47-47d2-b8f2-5df41d011a72)
+![icons8-facebook-logo-94](https://github.com/user-attachments/assets/eb289ffd-b828-4b18-9a6e-ad2024885768)
 # forex-lead-page
