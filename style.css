@@ -1,24 +1,526 @@
-hi{
-    font-weight: 700;
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
 }
 
-h2{
-    font-weight: 700;
+body{
+        font-family: 'Arial', sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f8f9fa;
 }
 
-h3{
-    font-weight: 700;
+header{
+        padding: 20px;
+        text-align: center;
+        background: linear-gradient(270deg, #ff6ec4, #7873f5);
+        background-size: 400% 400%;
+        color: white;
+        font-size: 2em;
+        animation: gradientShift 6s ease infinite;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
-p{
-    font-weight: 400;
+@keyframes gradientShift{
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
 }
 
-a{
-    font-weight: 400;
-    text-decoration: none;
-}  
-
-ul{
-    list-style: none;
+nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        margin-bottom: 30px;
 }
+
+nav img{
+        border-radius: 50px;
+        transition: transform 0.3s ease;
+}
+
+nav img:hover{
+        transform: scale(1.1);
+}
+
+nav ul{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+}
+
+nav a{
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 8px 16px;
+        border-radius: 20px;
+        transition: all 0.3s ease;
+        font-size: 0.5em;
+}
+
+nav a:hover{
+        background-color: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+}
+
+header section{
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 20px;
+}
+
+header h1{
+        font-size: 1.2em;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header h1 span{
+        color: #ffd700;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header p{
+        font-size: 0.6em;
+        margin-bottom: 30px;
+        opacity: 0.9;
+}
+
+header ul{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
+}
+
+header section a{
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: white;
+        text-decoration: none;
+        border-radius: 25px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        font-size: 0.5em;
+}
+
+header section a:hover{
+        background-color: rgba(255, 255, 255, 0.3);
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+main{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+}
+
+#features{
+        color: #2c3e50;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        text-align: center;
+        position: relative;
+}
+
+#features::after{
+        content: '';
+        display: block;
+        width: 80px;
+        height: 4px;
+        background: linear-gradient(90deg, #ff6ec4, #7873f5);
+        margin: 15px auto;
+        border-radius: 2px;
+}
+
+#features span{
+        background: linear-gradient(90deg, #ff6ec4, #7873f5);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+}
+
+.section-title{
+        color: #2c3e50;
+        font-size: 2.2em;
+        margin-bottom: 20px;
+        text-align: center;
+        margin-top: 50px;
+}
+
+main > div:first-child > section:first-child > ul{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+        list-style: none;
+}
+
+main > div:first-child > section:first-child > ul > div{
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: all 0.3s ease;
+        border: 1px solid #e9ecef;
+}
+
+main > div:first-child > section:first-child > ul > div:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+main > div:first-child > section:first-child > ul > div li{
+        font-size: 1.3em;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 20px;
+}
+
+main > div:first-child > section:first-child > ul > div img{
+        transition: transform 0.3s ease;
+}
+
+main > div:first-child > section:first-child > ul > div:hover img{
+        transform: scale(1.1);
+}
+
+main > div:first-child > section:nth-child(2){
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 40px;
+        border-radius: 15px;
+        margin-top: 50px;
+        text-align: center;
+}
+
+main > div:first-child > section:nth-child(2) strong{
+        color: #ffd700;
+        font-size: 1.2em;
+}
+
+main > div:first-child > section:nth-child(3){
+        background: white;
+        padding: 40px;
+        border-radius: 15px;
+        margin-top: 30px;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.footnote{
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 40px 0;
+        border-left: 4px solid #ff6ec4;
+}
+
+.footnote em{
+        color: #6c757d;
+        font-size: 0.9em;
+}
+
+main > section:last-child{
+        background: linear-gradient(135deg, #ff6ec4, #7873f5);
+        color: white;
+        padding: 50px;
+        border-radius: 15px;
+        text-align: center;
+        margin-top: 40px;
+}
+
+main > section:last-child h2{
+        font-size: 2.5em;
+        margin-bottom: 20px;
+}
+
+main > section:last-child a{
+        display: inline-block;
+        padding: 15px 35px;
+        background-color: white;
+        color: #7873f5;
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: 700;
+        font-size: 1.1em;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+main > section:last-child a:hover{
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+footer{
+        background: #2c3e50;
+        color: white;
+        padding: 50px 20px 30px;
+        text-align: center;
+}
+
+footer img{
+        margin-bottom: 30px;
+        transition: transform 0.3s ease;
+        border-radius: 25px;
+}
+
+footer img:hover{
+        transform: scale(1.1);
+}
+
+footer ul{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 30px;
+        list-style: none;
+}
+
+footer ul:first-of-type{
+        gap: 30px;
+}
+
+footer ul:first-of-type img{
+        transition: transform 0.3s ease;
+}
+
+footer ul:first-of-type img:hover{
+        transform: scale(1.2);
+}
+
+footer a{
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+}
+
+footer a:hover{
+        color: #ff6ec4;
+}
+
+footer p{
+        margin-top: 20px;
+        opacity: 0.8;
+        font-size: 0.9em;
+}
+
+@media (max-width: 768px){
+        header {
+          font-size: 1.5em;
+        }
+        
+        nav {
+          flex-direction: column;
+          gap: 20px;
+        }
+        
+        header ul {
+          flex-direction: column;
+          gap: 15px;
+        }
+        
+        main > div:first-child > section:first-child > ul {
+          grid-template-columns: 1fr;
+        }
+        
+        #features {
+          font-size: 2em;
+        }
+        
+        .section-title {
+          font-size: 1.8em;
+        }
+        
+        main > section:last-child h2 {
+          font-size: 2em;
+        }
+        
+        footer ul {
+          flex-direction: column;
+          gap: 15px;
+        }
+        
+        footer ul:first-of-type {
+          flex-direction: row;
+          justify-content: center;
+        }
+}
+
+@media (max-width: 480px) {
+        header {
+          font-size: 1.2em;
+          padding: 15px;
+        }
+        
+        main {
+          padding: 20px 15px;
+        }
+        
+        main > div:first-child > section:first-child > ul > div {
+          padding: 20px;
+        }
+        
+        main > div:first-child > section:nth-child(2),
+        main > div:first-child > section:nth-child(3) {
+          padding: 25px;
+        }
+        
+        main > section:last-child {
+          padding: 30px 20px;
+        }
+}
+</style>
+  </head>
+  <body>
+    <header>
+      <!-- NAVIGATION -->
+      <nav>
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <div style="width: 50px; height: 50px; background: #ffd700; border-radius: 50px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #333;">AIC</div>
+        </div>
+        <ul>
+          <li><a href="#login">Login</a></li>
+          <li><a href="#register">Register</a></li>
+        </ul>
+      </nav>
+
+      <!-- HERO SECTION -->
+      <section>
+        <h1>
+          Welcome to <span>AiC</span>
+          <br />
+          Forex Academy
+          📈
+        </h1>
+        <p>
+          A place where traders are built with skill, patience, and discipline
+        </p>
+        <ul>
+          <li><a href="#register">Get Started</a></li>
+          <li><a href="#features">Learn More</a></li>
+        </ul>
+      </section>
+    </header>
+
+    <main>
+      <!-- FEATURES SECTION -->
+      <div>
+        <section>
+          <h2 id="features"><span>Training Overview</span></h2>
+
+          <div>
+            <p>
+              At AIC, we train aspiring traders with hands-on strategy that
+              works in all market conditions. Our curricullum covers:
+            </p>
+          </div>
+
+          <ul>
+            <div>
+              <li>Forex Market Basics</li>
+              <div style="width: 150px; height: 120px; background: linear-gradient(45deg, #ff6ec4, #7873f5); border-radius: 10px; margin: 0 auto; display: flex; align-items: center; justify-content: center; color: white; font-size: 2em;">📊</div>
+            </div>
+
+            <div>
+              <li>Technical & Fundamental Analysis</li>
+              <div style="width: 150px; height: 120px; background: linear-gradient(45deg, #667eea, #764ba2); border-radius: 10px; margin: 0 auto; display: flex; align-items: center; justify-content: center; color: white; font-size: 2em;">📈</div>
+            </div>
+
+            <div>
+              <li>Trading Psychology</li>
+              <div style="width: 150px; height: 120px; background: linear-gradient(45deg, #f093fb, #f5576c); border-radius: 10px; margin: 0 auto; display: flex; align-items: center; justify-content: center; color: white; font-size: 2em;">🧠</div>
+            </div>
+
+            <div>
+              <li>Risk & Money Management</li>
+              <div style="width: 150px; height: 120px; background: linear-gradient(45deg, #4facfe, #00f2fe); border-radius: 10px; margin: 0 auto; display: flex; align-items: center; justify-content: center; color: white; font-size: 2em;">💰</div>
+            </div>
+
+            <div>
+              <li>Live Market Sessions</li>
+              <div style="width: 150px; height: 120px; background: linear-gradient(45deg, #43e97b, #38f9d7); border-radius: 10px; margin: 0 auto; display: flex; align-items: center; justify-content: center; color: white; font-size: 2em;">🎯</div>
+            </div>
+          </ul>
+        </section>
+
+        <section>
+          <h2 class="section-title">Upcoming Trainings</h2>
+          <p>
+            Our next session starts <strong>July 5th, 2025</strong>. Don't miss
+            your chance to level up your trading game.
+          </p>
+        </section>
+
+        <section>
+          <h2 class="section-title">Meet Your Coach</h2>
+          <p>
+            AIC is a seasoned trader with years of experience navigating the
+            forex market. Learn from someone who's walked the path and
+            understands the emotional and strategic battles traders face every
+            day.
+          </p>
+        </section>
+      </div>
+
+      <div class="footnote">
+        <p>
+          <em
+            >Disclaimer: Trading forex involves risk. AIC Forex Academy does not
+            offer financial advice but provides educational resources to help
+            you grow in knowledge and discipline.</em
+          >
+        </p>
+      </div>
+
+      <!-- CTA SECTION -->
+      <section>
+        <h2>Get Started Now</h2>
+        <a href="#register">Get Started</a>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div style="width: 50px; height: 50px; background: #ffd700; border-radius: 50px; display: flex; align-items: center; justify-content: center; font-weight: bold; color: #333; margin: 0 auto 30px;">AIC</div>
+      <ul>
+        <li>
+          <a href="https://www.youtube.com/">
+            <div style="width: 20px; height: 20px; background: #ff0000; border-radius: 3px; display: flex; align-items: center; justify-content: center; color: white; font-size: 12px;">▶</div>
+          </a>
+        </li>
+        <li>
+          <a href="https://web.facebook.com/">
+            <div style="width: 20px; height: 20px; background: #1877f2; border-radius: 3px; display: flex; align-items: center; justify-content: center; color: white; font-size: 12px;">f</div>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/">
+            <div style="width: 20px; height: 20px; background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); border-radius: 3px; display: flex; align-items: center; justify-content: center; color: white; font-size: 12px;">📷</div>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/">
+            <div style="width: 20px; height: 20px; background: #0077b5; border-radius: 3px; display: flex; align-items: center; justify-content: center; color: white; font-size: 12px;">in</div>
+          </a>
+        </li>
+      </ul>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#register">Register</a></li>
+      </ul>
+      <p>Made with ♥︎ in Nigeria</p>
+    </footer>
+  </body>
+</html>
